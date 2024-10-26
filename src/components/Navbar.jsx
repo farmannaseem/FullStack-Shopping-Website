@@ -38,36 +38,8 @@ const navbar = () => {
                   Product
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  New-Brands
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Lists
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
+              <li>
+                <Link className="nav-link" to='/Cart'>CART ITEMS</Link>
               </li>
             </ul>
             <SignedOut>

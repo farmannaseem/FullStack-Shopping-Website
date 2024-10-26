@@ -16,7 +16,7 @@ const MainLayout = () => {
         backgroundRepeat: 'no-repeat'
       }}>
       <div>
-        <h1 className="text-primary">Shopping Seamlessly With Our Website</h1>
+        <h1 className="">Shopping Seamless With Our Website</h1>
         <button className="btn btn-primary my-3"onClick={handlingpage}>SHOP NOW</button>
       </div>
     </div>

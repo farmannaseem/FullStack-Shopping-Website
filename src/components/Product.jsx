@@ -13,7 +13,7 @@ const Product = () => {
       });
   }, []);
   const productfilter = product.filter((title) => {
-    return title.price > 20 && title.price < 100;
+    return title.price > 5 && title.price < 200;
   });
   return (
     <div className="container">
@@ -21,7 +21,10 @@ const Product = () => {
         {productfilter.map((product) => (
           <div className="col-md-4 mb-4" key={product.id}>
             <div className="card h-100 shadow-lg my-3 pe-auto" role="button">
-              <Link to={`/ProductDetails/${product.id}`} style={{textDecoration:"none"}}>
+              <Link
+                to={`/ProductDetails/${product.id}`}
+                style={{ textDecoration: "none" }}
+              >
                 <img
                   src={product.image}
                   className="card-img-top my-2"
