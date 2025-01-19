@@ -10,7 +10,7 @@ const MainLayout = () => {
   return (
     <div className="d-flex justify-content-center align-items-center vh-100 text-center"
     style={{
-        backgroundImage: `url('Background-image.jpeg')`,
+        backgroundImage: `url('/Background-image.jpeg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
