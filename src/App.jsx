@@ -1,5 +1,27 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { useState } from "react";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { 
+  faShoppingCart, 
+  faHome, 
+  faStore, 
+  faHeart,
+  faEnvelope,
+  faPhone,
+  faCreditCard,
+  faChevronRight,
+  faLaptop,
+  faTshirt,
+  faGem,
+  faHouse,
+  faClock,
+  faPaperPlane,
+  faSearch,
+  faUser
+} from '@fortawesome/free-solid-svg-icons';
+
 import Navbar from "./components/Navbar";
 import MainLayout from "./components/MainLayout";
 import Footer from "./components/Footer";
@@ -7,6 +29,28 @@ import "./App.css";
 import Product from "./components/Product";
 import ProductDetails from "./components/ProductDetails";
 import Cart from "./components/Cart";
+
+// Add icons to library
+library.add(
+  fab,
+  far,
+  faShoppingCart, 
+  faHome, 
+  faStore, 
+  faHeart,
+  faEnvelope,
+  faPhone,
+  faCreditCard,
+  faChevronRight,
+  faLaptop,
+  faTshirt,
+  faGem,
+  faHouse,
+  faClock,
+  faPaperPlane,
+  faSearch,
+  faUser
+);
 
 function App() {
   const [cartItems, setCartItems] = useState([]);

@@ -16,14 +16,13 @@ const MainLayout = () => {
 
   useEffect(() => {
     setIsVisible(true);
-    // Set initial random background
     setCurrentBg(Math.floor(Math.random() * backgrounds.length));
 
     const interval = setInterval(() => {
       let nextBg;
       do {
         nextBg = Math.floor(Math.random() * backgrounds.length);
-      } while (nextBg === currentBg); // Ensure we don't show the same image twice
+      } while (nextBg === currentBg);
       setCurrentBg(nextBg);
     }, 5000);
 
@@ -36,7 +35,6 @@ const MainLayout = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100">
-      {/* Hero Section */}
       <div 
         className="flex-grow-1 d-flex justify-content-center align-items-center background-transition"
         style={{

@@ -178,3 +178,291 @@
     transform: translateY(0);
   }
 }
+
+/* Navbar Styles */
+.navbar {
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-transparent {
+  background: linear-gradient(135deg, #0950c9 0%, #0084ff 100%) !important;
+}
+
+.navbar-scrolled {
+  background: linear-gradient(135deg, #0950c9 0%, #0084ff 100%) !important;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+  color: white !important;
+}
+
+.brand-text {
+  color: white;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.25rem !important;
+  transition: all 0.3s ease !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.nav-link:hover {
+  color: white !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+/* Custom Button Styles */
+.nav-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-glass-primary {
+  background: white;
+  color: #0950c9;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-glass-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: white;
+  color: #0950c9;
+}
+
+.navbar .badge {
+  transition: all 0.3s ease;
+  background: #ff3e3e !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 0.45em 0.65em;
+}
+
+.navbar .nav-btn:hover .badge {
+  transform: scale(1.1);
+}
+
+/* Update Mobile Navbar Styles */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: #0950c9;
+    margin: 1rem -1rem;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-nav {
+    padding: 0.5rem 0;
+  }
+  
+  .nav-link {
+    color: white !important;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.75rem !important;
+    margin: 0.25rem 0;
+  }
+  
+  .nav-btn {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+  }
+  
+  .navbar-toggler {
+    padding: 0.25rem 0;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+/* Add safe area padding for mobile devices */
+@supports (padding: max(0px)) {
+  .navbar {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+}
+
+/* Restore the original padding */
+main {
+  padding-top: 76px;
+}
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(to right, #111827, #1f2937) !important;
+}
+
+.footer-title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.footer-content {
+  position: relative;
+}
+
+.footer-content .brand-text {
+  background: linear-gradient(45deg, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  text-shadow: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #a8a8a8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: var(--bs-primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.newsletter-form .form-control {
+  padding: 0.75rem 1.25rem;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.newsletter-form .form-control:focus {
+  box-shadow: none;
+  border-color: var(--bs-primary);
+}
+
+.newsletter-form .btn {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 50px;
+}
+
+.payment-methods i {
+  font-size: 1.5rem;
+  color: #a8a8a8;
+  transition: all 0.3s ease;
+}
+
+.payment-methods i:hover {
+  color: white;
+}
+
+@media (max-width: 991.98px) {
+  .footer-content {
+    text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .footer-title {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .footer-links {
+    text-align: center;
+  }
+  
+  .footer-links a:hover {
+    transform: none;
+  }
+}
+
+/* Add this to your footer styles */
+.text-primary-light {
+  color: #66b3ff !important; /* Light blue color */
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
