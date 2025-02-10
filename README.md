@@ -18,7 +18,6 @@ A full-stack e-commerce website built with React and Bootstrap 5, featuring a mo
 
 ### Shopping Cart
 ![Shopping Cart](Screenshot%20(97).png)
-*Smart shopping cart with real-time updates*
 
 ### Responsive Design
 ![Mobile View](Screenshot%20(98).png)
