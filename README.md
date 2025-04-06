@@ -5,7 +5,7 @@ A full-stack e-commerce website built with React and Bootstrap 5, featuring a mo
 ## 📸 Screenshots
 
 ### Homepage
-![Homepage](Screenshot%20(94).png)
+![Homepage](Screenshot%20(214).png)
 *Modern homepage with dynamic background transitions and elegant hero section*
 
 ### Products Page
