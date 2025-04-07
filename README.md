@@ -16,7 +16,7 @@ A full-stack e-commerce website built with React and Bootstrap 5, featuring a mo
 ![Product Details](Screenshot%20(215).png)
 *Detailed product view with add to cart functionality*
 
-### Shopping Cart
+###
 ![Shopping Cart](Screenshot%20(216).png)
 
 
