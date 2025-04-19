@@ -21,4 +21,3 @@ A full-stack e-commerce website built with React and Bootstrap 5, featuring a mo
 
 
 
-[Rest of the README content remains the same...]
